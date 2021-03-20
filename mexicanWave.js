@@ -11,7 +11,7 @@ function wave(str) {
 
       let wave = [];
 
-      function algo(letter, index) {
+      function capitalize(letter, index) {
         if (index === i) {
           wave.push(letter.toUpperCase());
         } else {
@@ -19,7 +19,7 @@ function wave(str) {
         }
       }
 
-      toArray.forEach(algo);
+      toArray.forEach(capitalize);
       result.push(wave.join(''));
     }
   }
